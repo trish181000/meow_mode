@@ -18,6 +18,8 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
 }
 
 /* Navigation Bar */
@@ -26,7 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #f7f2eb;
+    background-color: rgb(59, 59, 59);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,13 +45,13 @@ body {
 
 .nav-links li a {
     text-decoration: none;
-    color: #333;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #ff6347;
+    color: rgb(202, 125, 249);
 }
 
 /* Mobile Responsiveness */
@@ -73,7 +75,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
+
+    color: rgb(255, 255, 255);
     overflow: hidden;
 }
 
@@ -129,22 +132,22 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
-    background-color: #ff6347;
+    background-color: rgb(202, 125, 249);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #e5533b;
+    background-color: rgb(138, 0, 233);
     transform: scale(1.05);
 }
 
 /* About Section */
 .about {
     padding: 4rem 2rem;
-    background-color: #fdf6ec;
-    color: #333;
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
 }
 
 .about-container {
@@ -165,7 +168,7 @@ body {
 .about-text h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #ff6347;
+    color:rgb(100, 255, 204);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -178,7 +181,7 @@ body {
 }
 
 .about-text .about-gif {
-    width: 60px;
+    width: 125px;
     height: auto;
 }
 
@@ -191,7 +194,6 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile Responsiveness */
@@ -218,7 +220,8 @@ body {
 .meet-the-cats {
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #fdf6ec; /* Soft cream background */
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
 }
 
 .cat-carousel-wrapper {
