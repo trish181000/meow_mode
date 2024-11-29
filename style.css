@@ -33,7 +33,7 @@ body {
     top: 0;
     left: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    z-index: 9999;
+    z-index: 9000;
 }
 
 
@@ -361,7 +361,7 @@ body {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: rgba(202, 125, 249, 0.8); /* Example purple color */
+    background-color: rgba(202, 125, 249, 0.8); /* Light purple color */
     color: white;
     border: none;
     border-radius: 50%;
@@ -371,19 +371,18 @@ body {
     align-items: center;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-    z-index: 9999; /* Ensures it's on top of other elements */
-  }
-  
-  .scroll-to-top:hover {
-    background-color: rgb(138, 0, 233); /* Darker hover effect */
-    transform: scale(1.1);
-  }
-  
-  /* Show the button when scrolled */
-  .scroll-to-top.show {
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Prevent clicks until visible */
+    transition: opacity 0.3s ease;
+    z-index: 9999; /* Ensure it's on top */
+}
+
+.scroll-to-top:hover {
+    background-color: rgb(138, 0, 233); /* Darker purple on hover */
+}
+
+/* Show the button when scrolled */
+.scroll-to-top.show {
     opacity: 1;
-    visibility: visible;
-  }
+    pointer-events: auto; /* Enable clicks when visible */
+}
