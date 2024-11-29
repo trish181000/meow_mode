@@ -61,21 +61,38 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* Full screen height */
-    background: url('assets/hero.jpg') center/cover no-repeat; /* Replace with your image */
+    width: 100%; /* Full width of the page */
+    height: 500px; /* Fixed height */
+    margin: 0 auto; /* Center the hero section horizontally */
+    overflow: hidden; /* Ensure no overflow outside the section */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     text-align: center;
-    padding: 0 1rem;
+    color: #fff;
+}
+
+/* Video Styling */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the video */
+    width: 100%; /* Fill the width of the section */
+    height: auto; /* Scale height proportionally */
+    min-width: 100%; /* Ensure the video covers the entire width */
+    min-height: 100%; /* Ensure the video covers the entire height */
+    object-fit: cover; /* Prevent distortion and crop excess */
+    z-index: -1; /* Place video behind the content */
 }
 
 /* Hero Content */
 .hero-content {
+    position: relative; /* Ensure the content sits above the video */
+    z-index: 1; /* Above the video */
     max-width: 600px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better text visibility */
-    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+    padding: 1rem 2rem;
     border-radius: 10px;
     animation: fadeIn 2s ease-in-out;
 }
@@ -93,15 +110,15 @@ body {
 
 /* Headline and Subheading */
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -112,24 +129,13 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
-    background-color: #ff6347; /* Warm orange tone */
+    background-color: #ff6347;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #e5533b; /* Darker orange for hover effect */
-    transform: scale(1.05); /* Slight zoom effect */
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.25rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
+    background-color: #e5533b;
+    transform: scale(1.05);
 }
