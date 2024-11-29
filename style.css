@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+/* Allow vertical scroll, but hide the scrollbar */
+html, body {
+    overflow-y: scroll; /* Allows vertical scrolling */
+}
+
+::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
