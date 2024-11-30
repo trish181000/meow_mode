@@ -213,7 +213,7 @@ body {
 }
 
 .about-text h2 {
-    font-family: cy, sans-serif;
+    font-family: "cy", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2.5rem;
@@ -264,46 +264,6 @@ body {
     .about-text .about-gif {
         width: 80px;
     }
-}
-
-/* Meet the Cats Section */
-.meet-the-cats {
-    text-align: center;
-    padding: 4rem 2rem;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-}
-
-.cat-carousel-wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden; /* Hide the excess overflow for scroll */
-    margin: 2rem auto; /* Center the carousel */
-}
-
-/* The carousel itself */
-.cat-carousel {
-    display: flex;
-    gap: 2rem; /* Space between items */
-    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
-}
-
-.cat-item {
-    flex-shrink: 0; /* Prevent items from shrinking */
-    width: 250px; /* Set a fixed width for each card */
-    height: auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 1rem;
-}
-
-/* Cat images */
-.cat-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
 }
 
 /* Button styling */
