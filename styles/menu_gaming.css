@@ -1,9 +1,9 @@
-.special-sections {
+.special-section {
     background-color: #000; /* Black background */
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Space between the two cards */
+    gap: 20px; /* Space between the two cards */
 }
 
 .special-section {
@@ -16,17 +16,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #FF99B4;
     border-radius: 20px;
     padding: 0;
     margin: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 400px;
     overflow: hidden;
+    width: 90%; /* Adjust the width to make the cards smaller */
+  margin-left: auto;
+  margin-right: auto; /* Center the cards */
 }
 
 .special-card.reverse {
     flex-direction: row-reverse; /* Reverse image and text placement */
+    background-color: #64FFCC;
 }
 
 .special-card img.card-image {
@@ -72,12 +76,12 @@
 }
 
 .card-content h2 {
-    font-size: 1.5rem;
+    font-size: 2.5em;
     margin: 0;
 }
 
 .card-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 10px 0; /* Add spacing under the heading */
     line-height: 1.5;
 }
@@ -96,9 +100,9 @@
 
 .card-button {
     align-self: flex-start;
-    background-color: #f8c102;
-    color: #fff;
-    border: none;
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -108,7 +112,15 @@
 }
 
 .card-button:hover {
-    background-color: #e67e00; /* Darker shade for hover */
+    background-color: #FF2D9C;
+    border: none;
+    color: white; /* Darker shade for hover */
+}
+
+.special-card.reverse .card-button:hover {
+    background-color: #0dad58;
+    border: none;
+    color: white;
 }
 
 .card-button:active {

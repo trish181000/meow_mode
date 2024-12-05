@@ -10,7 +10,8 @@
     position: relative;
     width: calc(300px * 3 + 20px);
     margin: 0 auto;
-    overflow: hidden; /* Hide items outside the visible area */
+    overflow: hidden;
+    margin-bottom: 80px /* Hide items outside the visible area */
 }
 
 .cat-carousel {
