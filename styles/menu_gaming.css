@@ -6,11 +6,6 @@
     gap: 20px; /* Space between the two cards */
 }
 
-.special-section {
-    background-color: black;
-    padding: 20px;
-}
-
 .special-card {
     display: flex;
     flex-direction: row;
@@ -24,8 +19,8 @@
     height: 400px;
     overflow: hidden;
     width: 90%; /* Adjust the width to make the cards smaller */
-  margin-left: auto;
-  margin-right: auto; /* Center the cards */
+    margin-left: auto;
+    margin-right: auto; /* Center the cards */
 }
 
 .special-card.reverse {
@@ -146,4 +141,45 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Space out text and button */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .special-section {
+        padding: 20px 10px; /* Reduce padding on small screens */
+    }
+
+    .special-card {
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Allow height to adjust dynamically */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .special-card img.card-image {
+        width: 100%; /* Image takes up full width of the card */
+        height: 200px; /* Fixed height for images in mobile view */
+        border-radius: 20px 20px 0 0; /* Rounded corners for top side */
+    }
+
+    .card-content h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .card-content p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .card-button {
+        width: 100%; /* Button takes full width on small screens */
+        text-align: center; /* Center the button text */
+        padding: 12px 0; /* Larger padding for easy tapping */
+    }
+
+    .special-card.reverse img.card-image {
+        border-radius: 20px 20px 0 0; /* Adjust for reversed cards on mobile */
+    }
+
+    .special-card.align-right .card-content {
+        text-align: center; /* Center-align text on mobile */
+    }
 }
