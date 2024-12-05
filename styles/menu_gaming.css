@@ -1,0 +1,89 @@
+.special-sections {
+    background-color: #000; /* Black background */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between the two cards */
+}
+
+.special-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White card background */
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 1200px; /* Limit the card width */
+    width: 90%; /* Take up most of the page width */
+    margin: 0 auto; /* Center the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.special-card.left {
+    flex-direction: row; /* Image on the left */
+}
+
+.special-card.right {
+    flex-direction: row-reverse; /* Image on the right */
+}
+
+.card-image {
+    width: 40%; /* Image takes up 40% of the card */
+    height: auto;
+    object-fit: cover; /* Ensures the image doesn't get distorted */
+}
+
+.card-content {
+    padding: 20px;
+    width: 60%; /* Content takes up the remaining space */
+    color: #000; /* Black text color */
+    text-align: left; /* Aligns text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+}
+
+.card-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.special-card.right .card-content {
+    text-align: right; /* Aligns text to the right for the right card */
+}
+
+.card-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f7941d; /* Accent color */
+    border: none;
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-button:hover {
+    background-color: #e67e00; /* Darker shade for hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.card-button:active {
+    transform: scale(1); /* Reset scaling when clicked */
+}
+
+.special-card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures button stays aligned to text */
+}
+
+.special-card.right .card-content {
+    align-items: flex-end; /* Aligns button to the right for the right card */
+}

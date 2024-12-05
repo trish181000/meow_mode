@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meow Mode Cafe</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="cat_cards.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/cat_cards.css">
+  <link rel="stylesheet" href="styles/menu_gaming.css">
+  <link rel="stylesheet" href="styles/events.css">
   <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="shortcut icon" href="assets/favicon.ico" />
@@ -70,8 +72,13 @@
   </section>
 
     <!--MEET YOUR PLAYER 2-->
-  <section class="meet-the-cats">
+  <section class="meet-the-cats" id="cats">
     <h2>Meet Your Player 2</h2>
+    <div class="desc1">
+    <p>Meet your purr-fect match! Each of these adorable cats is looking for their forever home and a loving player 2. 
+      Whether you're seeking a curious sidekick, a cuddly companion, or a playful partner-in-crime, this is your chance find you new best friend. 
+      Adopt one of these fur-tastic friends and level up your life with unconditional love, purrs, and endless adventures!</p>
+    </div>
     <div class="cat-carousel-wrapper">
         <div class="cat-carousel">
             <div class="cat-item card">
@@ -120,7 +127,53 @@
         <button class="carousel-button prev-button"></button>
         <button class="carousel-button next-button"></button>
     </div>
+
+    <section class="special-sections">
+      <div class="special-card left">
+          <img src="assets/matcha.jpg" alt="Bestseller Menu" class="card-image">
+          <div class="card-content">
+              <h2>Fur-midable Favorites</h2>
+              <p>Explore our bestselling menu items that will leave you purring for more. From claw-some coffee to paw-fect pastries, there’s something for every taste.</p>
+              <button class="card-button">Explore Menu</button>
+          </div>
+      </div>
+      <div class="special-card right">
+          <img src="assets/vr.jpg" alt="Gaming Zone" class="card-image">
+          <div class="card-content">
+              <h2>Paw-some Playtime</h2>
+              <p>Dive into the ultimate gaming zone experience where fun and competition collide. Whether it’s arcade classics or new-gen consoles, it’s a cat-tastic adventure.</p>
+              <button class="card-button">Join the Fun</button>
+          </div>
+      </div>
+  </section>
+
+<!--EVENTS-->
+<section class="events">
+  <h2>Upcoming Cat-tastic Events</h2>
+  <p>Join us for pawsome gatherings that bring the purrs and fun! Here’s what’s happening soon:</p>
+  <div class="event-list">
+      <div class="event">
+          <h3>Meow Mode Game Night</h3>
+          <p>Get your game face on and enjoy a cozy evening of board games, consoles, and cat cuddles! 🕹️🐾</p>
+          <p><strong>Date:</strong> December 15th, 2024</p>
+          <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+      </div>
+      <div class="event">
+          <h3>Purr & Paint Workshop</h3>
+          <p>Unleash your creativity while our feline friends keep you company. All skill levels welcome! 🎨🐈</p>
+          <p><strong>Date:</strong> December 20th, 2024</p>
+          <p><strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+      </div>
+      <div class="event">
+          <h3>Cat Café Movie Night</h3>
+          <p>Watch a cat-themed movie with your favorite furry friends. Popcorn included! 🍿😺</p>
+          <p><strong>Date:</strong> December 22nd, 2024</p>
+          <p><strong>Time:</strong> 7:00 PM - 9:30 PM</p>
+      </div>
+  </div>
 </section>
+
+
 <button id="scrollToTop" class="scroll-to-top">↑</button>
 <script src="script.js"></script>
 </body>
