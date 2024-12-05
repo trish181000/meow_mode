@@ -187,7 +187,6 @@ body {
 
 .btn:hover {
     background-color: rgb(255, 99, 216);
-    transform: scale(1.05);
 }
 
 /* About Section */

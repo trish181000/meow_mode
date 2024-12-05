@@ -6,16 +6,38 @@
     gap: 40px; /* Space between the two cards */
 }
 
+.special-section {
+    background-color: black;
+    padding: 20px;
+}
+
 .special-card {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    background-color: #fff; /* White card background */
-    border-radius: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 400px;
     overflow: hidden;
-    max-width: 1200px; /* Limit the card width */
-    width: 90%; /* Take up most of the page width */
-    margin: 0 auto; /* Center the cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.special-card.reverse {
+    flex-direction: row-reverse; /* Reverse image and text placement */
+}
+
+.special-card img.card-image {
+    width: 30%; /* Proportional image width */
+    height: 100%; /* Fill card height */
+    object-fit: cover;
+    border-radius: 20px 0 0 20px; /* Rounded corners for normal cards */
+}
+
+.special-card.reverse img.card-image {
+    border-radius: 0 20px 20px 0; /* Rounded corners for reversed cards */
 }
 
 .special-card.left {
@@ -33,45 +55,60 @@
 }
 
 .card-content {
+    flex: 1;
     padding: 20px;
-    width: 60%; /* Content takes up the remaining space */
-    color: #000; /* Black text color */
-    text-align: left; /* Aligns text to the left */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers text vertically */
+    justify-content: flex-start;
+    gap: 10px;
+    color: black;
+    overflow: hidden;
+    text-align: left;
+}
+
+.special-card.align-right .card-content {
+    text-align: right; /* Align text to the right */
+    align-items: flex-end; /* Align content to the right */
 }
 
 .card-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 .card-content p {
     font-size: 1rem;
-    line-height: 1.6;
+    margin: 10px 0; /* Add spacing under the heading */
+    line-height: 1.5;
 }
 
 .special-card.right .card-content {
     text-align: right; /* Aligns text to the right for the right card */
 }
 
+.special-card.align-right .card-button {
+    align-self: flex-end; /* Button aligns to the right for this card */
+}
+
+.special-card.align-right img {
+    object-position: top;
+}
+
 .card-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
+    align-self: flex-start;
+    background-color: #f8c102;
     color: #fff;
-    background-color: #f7941d; /* Accent color */
     border: none;
-    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .card-button:hover {
     background-color: #e67e00; /* Darker shade for hover */
-    transform: scale(1.05); /* Slight scaling effect */
 }
 
 .card-button:active {
@@ -86,4 +123,12 @@
 
 .special-card.right .card-content {
     align-items: flex-end; /* Aligns button to the right for the right card */
+}
+
+.card-content {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out text and button */
 }
