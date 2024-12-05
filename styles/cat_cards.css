@@ -6,6 +6,7 @@
     color: rgb(255, 255, 255);
     position: relative; /* Ensure proper positioning of child elements */
     overflow: visible;
+    width: 100%; /* Ensure it spans the page */
 }
 .meet-the-cats p {
     max-width: 900px; /* Adjust this value to your preference */
@@ -92,19 +93,19 @@
     padding: 10px 15px;
     cursor: pointer;
     font-size: 18px;
-    z-index: 1000;
+    z-index: 1000; /* Ensure it appears above other elements */
     border-radius: 50%;
-    opacity: 0.8; /* Slightly transparent by default */
-    transition: transform 0.3s ease, opacity 0.3s ease; 
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Positioning for buttons */
 .prev-button {
-    left: -60px;
+    left: 5px;
 }
 
 .next-button {
-    right: -60px;
+    right: 5px;
 }
 
 /* Hover effect */
