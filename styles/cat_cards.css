@@ -23,16 +23,14 @@
     color: #CA7DF9;
 }
 
-/* Cat Carousel Wrapper */
 .cat-carousel-wrapper {
     position: relative;
     width: calc(400px * 3 + 20px);
     margin: 0 auto;
     overflow: hidden;
-    margin-bottom: 200px; /* Hide items outside the visible area */
+    margin-bottom: 200px /* Hide items outside the visible area */
 }
 
-/* Cat Carousel Styling */
 .cat-carousel {
     display: flex; /* Flexbox to arrange cards in a row */
     transition: transform 0.5s ease; /* Smooth transition on slide change */
@@ -132,57 +130,5 @@
     }
     100% {
         transform: translateX(-100%); /* Move all the way to the left */
-    }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-
-    /* Meet the Cats Section */
-    .meet-the-cats {
-        padding: 3rem 1.5rem; /* Adjust padding for smaller screens */
-    }
-
-    .meet-the-cats h2 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
-    }
-
-    .meet-the-cats p {
-        max-width: 100%; /* Allow paragraph to take full width */
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-
-    /* Carousel Wrapper */
-    .cat-carousel-wrapper {
-        width: 100%; /* Make carousel take full width */
-        margin-bottom: 100px; /* Adjust bottom margin for smaller screens */
-    }
-
-    /* Carousel Item Styling */
-    .cat-carousel {
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px;
-    }
-
-    .cat-item {
-        flex: 0 0 100%; /* Make each card take full width on small screens */
-        height: 400px; /* Adjust height to fit smaller screens */
-    }
-
-    .cat-item img {
-        height: 250px; /* Adjust image height for mobile screens */
-    }
-
-    /* Button Container */
-    .carousel-button {
-        padding: 8px 12px;
-        font-size: 16px; /* Adjust font size for smaller buttons */
-    }
-
-    /* Positioning for buttons */
-    .prev-button, .next-button {
-        top: 45%; /* Adjust position for smaller screens */
     }
 }
