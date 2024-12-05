@@ -5,10 +5,19 @@
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
+.meet-the-cats p {
+    max-width: 800px; /* Adjust this value to your preference */
+    margin: 0 auto; /* Center align the paragraph */
+    text-align: center; /* Ensure the text is centered */
+    line-height: 1.6; /* Optional: improve readability */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .meet-the-cats h2 {
     font-family: "larabiefont", monospace;
     font-size: 2.5rem;
+    color: #CA7DF9;
 }
 
 .cat-carousel-wrapper {
@@ -61,6 +70,7 @@
 
 .card-text p {
     font-size: 1rem;
+    font-family: "montserrat", sans-serif;
     margin: 0;
 }
 
