@@ -1,0 +1,93 @@
+/* Ensure the body and html elements stretch to the full width */
+/* Ensure the body and html elements stretch to the full width */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Footer styles */
+.footer {
+    width: 100%; /* Ensures the footer takes up the full width */
+    background-color: #3B3B3B; /* Background color to cover the full width */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding on top and bottom */
+    box-sizing: border-box; /* Ensures padding does not affect the width */
+    font-family: "proxima-nova", sans-serif;
+}
+
+/* Footer content styling */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Links styling */
+.footer-links {
+    margin-bottom: 20px; /* Space between the two sections */
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links ul li {
+    display: inline;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-family: "proxima-nova", sans-serif;
+}
+
+.footer-links ul li a:hover {
+    color:  #FF63D8;
+}
+
+/* Social icon styling */
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social .social-icon {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Copyright section styling */
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Responsive design for footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links, .footer-social {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

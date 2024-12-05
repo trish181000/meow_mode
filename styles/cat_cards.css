@@ -6,6 +6,11 @@
     color: rgb(255, 255, 255);
 }
 
+.meet-the-cats h2 {
+    font-family: "larabiefont", monospace;
+    font-size: 2.5rem;
+}
+
 .cat-carousel-wrapper {
     position: relative;
     width: calc(300px * 3 + 20px);

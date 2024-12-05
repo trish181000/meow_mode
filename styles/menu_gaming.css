@@ -78,10 +78,12 @@
 .card-content h2 {
     font-size: 2.5em;
     margin: 0;
+    font-family: "cy", sans-serif;
 }
 
 .card-content p {
     font-size: 1.2rem;
+    font-family: "proxima-nova", sans-serif;
     margin: 10px 0; /* Add spacing under the heading */
     line-height: 1.5;
 }
