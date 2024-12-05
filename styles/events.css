@@ -4,6 +4,7 @@
     background-color: black;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 /* Event Section Heading */
@@ -18,17 +19,16 @@
 /* Event Section Description */
 .events-section p {
     font-size: 1.1rem;
-    margin-bottom: 30px; /* Adds space between the description and the cards */
+    margin-bottom: 70px; /* Adds space between the description and the cards */
 }
 
 /* Event Container */
 .event-container {
     display: flex;
     justify-content: space-between;
-    gap: 0; /* Remove gap between cards */
-    margin-top: 0;
     flex-wrap: wrap; /* Ensures the cards wrap on smaller screens */
-    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Event Card Styles */
@@ -39,8 +39,9 @@
     width: 320px; /* Adjust card width */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0; /* Remove margin to eliminate space between cards */
     margin-bottom: 20px;
+    box-sizing: border-box;
+    margin: 10px;
 }
 
 /* Hover effect */
@@ -65,8 +66,8 @@
 /* Event Card Buttons */
 .event-card button {
     background-color: transparent;
-    color: #333;
-    border: 2px solid #333;
+    color: #FF63D8;
+    border: 2px solid #FF63D8;
     padding: 10px 15px;
     text-align: center;
     font-size: 1rem;
@@ -78,7 +79,7 @@
 
 /* Button Hover Effect */
 .event-card button:hover {
-    background-color: #333;
+    background-color: #FF63D8;
     color: white;
 }
 
