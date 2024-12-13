@@ -28,7 +28,7 @@
   margin-right: auto; /* Center the cards */
 }
 
-.special-card.reverse {
+.special-card.right {
     flex-direction: row-reverse; /* Reverse image and text placement */
     background-color: #64FFCC;
 }
@@ -40,7 +40,7 @@
     border-radius: 20px 0 0 20px; /* Rounded corners for normal cards */
 }
 
-.special-card.reverse img.card-image {
+.special-card.right img.card-image {
     border-radius: 0 20px 20px 0; /* Rounded corners for reversed cards */
 }
 
@@ -70,7 +70,11 @@
     text-align: left;
 }
 
-.special-card.align-right .card-content {
+.special-card.left .card-content p {
+    text-align: left;
+}
+
+.special-card.right .card-content p {
     text-align: right; /* Align text to the right */
     align-items: flex-end; /* Align content to the right */
 }
@@ -93,11 +97,11 @@
     text-align: right; /* Aligns text to the right for the right card */
 }
 
-.special-card.align-right .card-button {
+.special-card.right .card-button {
     align-self: flex-end; /* Button aligns to the right for this card */
 }
 
-.special-card.align-right img {
+.special-card.right img {
     object-position: top;
 }
 
@@ -120,7 +124,7 @@
     color: white; /* Darker shade for hover */
 }
 
-.special-card.reverse .card-button:hover {
+.special-card.right .card-button:hover {
     background-color: #0dad58;
     border: none;
     color: white;
